@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/favicon.png">
+<title>Know Before You Go — HSE Live Syracuse 2026</title>
+<meta name="description" content="Everything you need for Head Start East LIVE at Turning Stone Resort Casino, Verona NY, September 23–25 2026: parking, check-in, finding your sessions, evenings, and lodging.">
+<meta property="og:title" content="Know Before You Go — HSE Live Syracuse 2026">
+<meta property="og:description" content="Parking, check-in, your rooms, evenings and lodging for HSE Live at Turning Stone, September 23–25 2026.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Quicksand:wght@500;600;700&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0F3A4C;      /* primary headers, anchors, footer */
+    --hse:#2B6B8A;       /* secondary headers, structure */
+    --carib:#29B6E7;     /* dominant accent */
+    --coral:#F48CC6;
+    --palm:#2DB353;
+    --sun:#FFB81C;       /* primary CTA + LIVE accent */
+    --cream:#F8F5EF;     /* page background */
+    --sky:#EAF7FC;       /* alternating sections */
+    --white:#fff;
+    --rule:#d8e6ec;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    background:var(--cream);
+    color:var(--navy);
+    font-family:'Nunito',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    font-size:17px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{font-family:'Quicksand',sans-serif;font-weight:700;margin:0;text-wrap:balance}
+  p{margin:0}
+  a{color:var(--hse);text-decoration:none;border-bottom:3px solid var(--carib);padding-bottom:1px;font-weight:700}
+  a:hover{color:var(--navy);border-bottom-color:var(--sun)}
+  a:focus-visible,button:focus-visible{outline:3px solid var(--navy);outline-offset:3px;border-radius:4px}
+
+  .stripe{display:flex;height:10px}
+  .stripe div{flex:1}
+
+  .topbar{background:var(--navy)}
+  .topbar-inner{max-width:1080px;margin:0 auto;padding:16px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  .logo-chip{background:var(--cream);border-radius:12px;padding:8px 14px;display:inline-flex;border-bottom:0}
+  .logo-chip:hover{border-bottom:0}
+  .topnav{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+  .topnav a{font-family:'Quicksand',sans-serif;font-weight:700;font-size:15px;color:var(--cream);border-bottom:0}
+  .topnav a:hover{color:var(--sun);border-bottom:0}
+
+  /* Sticky section nav — desktop only */
+  .secnav{display:none}
+  @media (min-width:900px){
+    .secnav{
+      display:block;position:sticky;top:0;z-index:20;
+      background:rgba(248,245,239,.94);backdrop-filter:blur(8px);
+      border-bottom:2px solid var(--rule);
+    }
+    .secnav ul{max-width:1080px;margin:0 auto;padding:12px 20px;display:flex;gap:26px;list-style:none}
+    .secnav a{font-family:'Quicksand',sans-serif;font-weight:700;font-size:14.5px;color:var(--hse);border-bottom:3px solid transparent}
+    .secnav a:hover{color:var(--navy);border-bottom-color:var(--carib)}
+  }
+
+  .hero{background:var(--navy);color:var(--cream);padding:52px 20px 56px}
+  .hero-inner{max-width:1080px;margin:0 auto}
+  .kicker{font-family:'Quicksand',sans-serif;font-weight:700;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--sun);margin-bottom:14px}
+  .hero h1{font-size:clamp(38px,9vw,62px);line-height:1.05;letter-spacing:-.01em;color:var(--white)}
+  .scribble{display:block;width:190px;max-width:60%;height:14px;margin:14px 0 18px}
+  .hero .sub{font-size:clamp(17px,4.4vw,21px);color:#cfe6f0;max-width:36ch}
+
+  .btn{
+    display:inline-block;font-family:'Quicksand',sans-serif;font-weight:700;font-size:17px;
+    background:var(--sun);color:var(--navy);border:0;border-bottom:0;
+    padding:15px 30px;border-radius:999px;margin-top:26px;
+    box-shadow:0 4px 0 #d99a0d;transition:transform .12s ease,background .12s ease;
+  }
+  .btn:hover{background:#ffc94a;color:var(--navy);transform:translateY(-2px);border-bottom:0}
+  .btn.alt{background:var(--carib);box-shadow:0 4px 0 #1a93bd}
+  .btn.alt:hover{background:#4ec6ee;color:var(--navy)}
+
+  section.band{padding:46px 20px}
+  .band-inner{max-width:1080px;margin:0 auto}
+  .sky{background:var(--sky)}
+  .cream{background:var(--cream)}
+
+  h2{font-size:clamp(26px,6vw,34px);color:var(--navy);margin-bottom:6px}
+  .h2-rule{width:64px;height:6px;border-radius:99px;background:var(--carib);margin:0 0 20px}
+  .lede{font-size:17.5px;max-width:62ch}
+  .lede + .lede{margin-top:14px}
+
+  .chip{
+    display:inline-block;background:var(--sun);color:var(--navy);
+    font-family:'Quicksand',sans-serif;font-weight:700;font-size:13.5px;
+    padding:3px 11px;border-radius:999px;margin:2px 0;line-height:1.5;
+  }
+  .chip::before{content:"To be confirmed — ";font-weight:700}
+
+  .cards{display:grid;gap:16px;margin-top:24px}
+  @media (min-width:820px){.cards{grid-template-columns:repeat(3,1fr)}}
+  .card{background:var(--white);border-radius:18px;padding:22px;border-top:8px solid var(--carib);box-shadow:0 2px 14px rgba(15,58,76,.07)}
+  .card:nth-child(2){border-top-color:var(--palm)}
+  .card:nth-child(3){border-top-color:var(--coral)}
+  .card h3{font-size:20px;margin-bottom:4px}
+  .card .where{font-size:13.5px;font-weight:700;color:var(--hse);text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px}
+  .card p{font-size:16px}
+  .roomlist{list-style:none;margin:12px 0 0;padding:0;display:flex;flex-direction:column;gap:7px}
+  .roomlist li{display:flex;gap:10px;align-items:baseline;font-size:15.5px}
+  .code{
+    flex:none;min-width:34px;text-align:center;background:var(--sky);color:var(--hse);
+    font-family:'Quicksand',sans-serif;font-weight:700;font-size:13px;border-radius:6px;padding:2px 6px;
+  }
+
+  figure{margin:26px 0 0}
+  figure img{width:100%;height:auto;display:block;border-radius:16px;border:1px solid var(--rule);background:var(--white)}
+  figcaption{font-size:15px;color:var(--hse);margin-top:10px;max-width:62ch}
+
+  .facts{list-style:none;padding:0;margin:20px 0 0;display:grid;gap:12px}
+  @media (min-width:700px){.facts{grid-template-columns:1fr 1fr}}
+  .facts li{background:var(--white);border-radius:14px;padding:16px 18px;border-left:6px solid var(--sun);font-size:16.5px}
+
+  .callout{background:var(--white);border-radius:18px;padding:24px;margin-top:22px;border:2px dashed var(--carib)}
+  .callout strong{font-family:'Quicksand',sans-serif}
+
+  footer{background:var(--navy);color:var(--cream);padding:40px 20px}
+  footer .band-inner{display:flex;flex-wrap:wrap;gap:18px;justify-content:space-between;align-items:center}
+  footer a{color:var(--sun);border-bottom-color:var(--sun)}
+  footer a:hover{color:var(--white);border-bottom-color:var(--white)}
+  .foot-note{font-size:15px;color:#bcd6e0}
+
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    *{transition:none!important}
+  }
+
+  /* ---------- Print: clean one-pager ---------- */
+  @media print{
+    @page{size:letter portrait;margin:11mm}
+    body{background:#fff;font-size:10.2pt;line-height:1.35}
+    .stripe,.topbar,.secnav,.btn,.scribble,#map-detail-figure,.print-hide{display:none!important}
+    .hero{background:#fff;color:var(--navy);padding:0 0 8pt;border-bottom:2.5pt solid var(--navy)}
+    .hero h1{font-size:23pt;color:var(--navy)}
+    .hero .sub{color:var(--navy);font-size:11pt;max-width:none}
+    .kicker{color:var(--navy);font-size:8pt;margin-bottom:4pt}
+    section.band{padding:9pt 0 0;background:#fff!important;break-inside:avoid}
+    h2{font-size:13pt;margin-bottom:2pt}
+    .h2-rule{height:2.5pt;width:40pt;margin-bottom:6pt;background:var(--navy)}
+    .lede,.card p,.facts li,.roomlist li{font-size:10pt}
+    .cards{grid-template-columns:1fr 1fr 1fr;gap:8pt;margin-top:8pt}
+    .card{padding:8pt;border:0.6pt solid #99b4c0;border-top-width:2.5pt;box-shadow:none;border-radius:6pt;break-inside:avoid}
+    .card h3{font-size:11pt}
+    .facts{grid-template-columns:1fr 1fr;gap:6pt;margin-top:8pt}
+    .facts li{padding:6pt 8pt;border-left-width:3pt;border-radius:5pt}
+    .callout{padding:8pt;margin-top:8pt;border-width:1pt;border-radius:6pt;break-inside:avoid}
+    figure{margin-top:8pt}
+    figure img{max-height:62mm;object-fit:contain;border-radius:6pt}
+    figcaption{font-size:8.5pt;margin-top:4pt}
+    footer{background:#fff;color:var(--navy);padding:8pt 0 0;border-top:2.5pt solid var(--navy)}
+    .foot-note{color:var(--navy);font-size:9pt}
+    a{color:var(--navy)!important;border-bottom:0}
+    .chip{background:#fff;border:0.8pt solid var(--navy);color:var(--navy);font-size:8.5pt}
+  }
+</style>
+</head>
+<body>
+
+<div class="stripe" aria-hidden="true">
+  <div style="background:#FFB81C"></div>
+  <div style="background:#29B6E7"></div>
+  <div style="background:#F48CC6"></div>
+  <div style="background:#2DB353"></div>
+</div>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="logo-chip" href="https://www.headstarteast.org" aria-label="Head Start East home">
+      <img src="https://hsereg.org/brand/headstart-east-logo.png" alt="Head Start East" style="height:34px;width:auto;display:block">
+    </a>
+    <nav class="topnav" aria-label="Site">
+      <a href="/">Event Home</a>
+      <a href="https://schedule.headstarteast.org/">Schedule</a>
+      <a href="https://hsereg.org">Register</a>
+    </nav>
+  </div>
+</header>
+
+<nav class="secnav print-hide" aria-label="On this page">
+  <ul>
+    <li><a href="#getting-there">Getting There</a></li>
+    <li><a href="#check-in">Check In</a></li>
+    <li><a href="#sessions">Finding Your Sessions</a></li>
+    <li><a href="#evenings">Evenings</a></li>
+    <li><a href="#lodging">Lodging</a></li>
+    <li><a href="#good-to-know">Good to Know</a></li>
+  </ul>
+</nav>
+
+<div class="hero">
+  <div class="hero-inner">
+    <p class="kicker">Head Start East LIVE</p>
+    <h1>Know Before You Go</h1>
+    <svg class="scribble" viewBox="0 0 200 14" fill="none" aria-hidden="true">
+      <path d="M2 9c22-6 44 2 66-2s44-7 66-2 44 6 64 1" stroke="#FFB81C" stroke-width="5" stroke-linecap="round"/>
+    </svg>
+    <p class="sub">Turning Stone Resort Casino, Verona, New York · September 23–25, 2026</p>
+    <a class="btn" href="https://hsereg.org">Register or manage your registration →</a>
+  </div>
+</div>
+
+<section class="band cream" id="getting-there">
+  <div class="band-inner">
+    <h2>Getting There &amp; Parking</h2>
+    <div class="h2-rule"></div>
+    <p class="lede">Turning Stone Resort Casino is at <strong>5218 Patrick Road, Verona, New York</strong> — about thirty minutes east of Syracuse, right off Thruway <strong>Exit 33</strong>.</p>
+    <p class="lede">Self parking in the resort garages is <strong>free</strong>, and <strong>complimentary valet</strong> is available at the Tower main entrance.</p>
+    <p style="margin-top:14px"><span class="chip">the entrance and garage we are steering attendees to.</span></p>
+
+    <figure>
+      <picture>
+        <source srcset="/images/property-map-overview.webp" type="image/webp">
+        <img src="/images/property-map-overview.png" width="1400" height="1082" loading="lazy" decoding="async"
+             alt="Overview map of the Turning Stone property showing Patrick Road along the south edge, Route 365 to the west, and Thruway Exit 33 to the northwest. The casino sits at the centre, with the Event Center and Grand Expo to its east, the parking garages along the southeast, and the Lodge, Crescent, Brook and Tower lodging buildings around the perimeter.">
+      </picture>
+      <figcaption>Arrival view: Exit 33 brings you in from the northwest, and the parking garages run along the southeast side of the property, next to the Event Center.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="band sky" id="check-in">
+  <div class="band-inner">
+    <h2>Check In &amp; Registration</h2>
+    <div class="h2-rule"></div>
+    <p class="lede">Stop by the <strong>Head Start East LIVE registration table</strong> first for your name badge and materials. Our team will point you to your rooms and answer questions.</p>
+    <p style="margin-top:14px"><span class="chip">the registration table location and hours.</span></p>
+  </div>
+</section>
+
+<section class="band cream" id="sessions">
+  <div class="band-inner">
+    <h2>Finding Your Sessions</h2>
+    <div class="h2-rule"></div>
+    <p class="lede">Our program runs in two areas of the property, plus the entertainment wing on Thursday evening.</p>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Conference Center</h3>
+        <p class="where">All together, one corridor</p>
+        <p>Professional Development Day, the Fiscal Leadership Summit, and every breakout room sit side by side off the Conference Center corridor.</p>
+        <ul class="roomlist">
+          <li><span class="code">M8</span> <span><strong>Mohawk</strong> — Professional Development Day</span></li>
+          <li><span class="code">M7</span> <span><strong>Seneca</strong> — Fiscal Leadership Summit</span></li>
+          <li><span class="code">M6</span> <span><strong>Onondaga</strong> — breakouts</span></li>
+          <li><span class="code">M4</span> <span><strong>Tuscarora</strong> — breakouts</span></li>
+          <li><span class="code">M5</span> <span><strong>Cayuga</strong> — breakouts</span></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Tower Meeting Rooms</h3>
+        <p class="where">A short walk — allow extra time</p>
+        <p>The CLASS Observer Certification meets all three days in <strong>Oak</strong>, over near the Event Center rather than in the Conference Center. Certification attendees should allow a few extra minutes to get there.</p>
+        <ul class="roomlist">
+          <li><span class="code">T5</span> <span><strong>Oak</strong> — CLASS Observer Certification, all three days</span></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Turquoise Tiger</h3>
+        <p class="where">Entertainment wing</p>
+        <p>Thursday evening’s reception and karaoke. It’s in the entertainment wing, a different part of the property from the meeting rooms.</p>
+        <ul class="roomlist">
+          <li><span class="code">E6</span> <span><strong>Turquoise Tiger</strong> — Thursday reception &amp; karaoke</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <figure id="map-detail-figure">
+      <picture>
+        <source srcset="/images/property-map-detail.webp" type="image/webp">
+        <img src="/images/property-map-detail.png" width="2000" height="1545" loading="lazy" decoding="async"
+             alt="Detailed Turning Stone property map. The Conference Center rooms are numbered M1 to M9 and cluster together off the Conference Center corridor — Tuscarora is M4, Cayuga M5, Onondaga M6, Seneca M7 and Mohawk M8. The Tower Meeting Rooms are numbered T1 to T6 near the Event Center Atrium, where Oak is T5. The Turquoise Tiger is E6 in the entertainment wing on the west side. Parking garages run along the southeast edge and the Tower main hotel entrance with valet parking is at the bottom centre.">
+      </picture>
+      <figcaption>
+        Turning Stone’s property map — the letter-and-number codes above match the ones printed here.
+        <span class="chip">the final map, which will highlight our rooms and the registration table.</span>
+        <br><a href="/images/turning-stone-property-map.pdf">Download the full property map (PDF)</a>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="band sky" id="evenings">
+  <div class="band-inner">
+    <h2>Evenings</h2>
+    <div class="h2-rule"></div>
+    <p class="lede"><strong>Wednesday</strong> — join the Head Start Family and Community Celebration, a welcoming dinner in <strong>Onondaga</strong>.</p>
+    <p class="lede"><strong>Thursday</strong> — the reception and karaoke move to the <strong>Turquoise Tiger</strong>.</p>
+  </div>
+</section>
+
+<section class="band cream" id="lodging">
+  <div class="band-inner">
+    <h2>Lodging</h2>
+    <div class="h2-rule"></div>
+    <p class="lede">The <strong>Tower</strong> and the <strong>Brook</strong> are inside the main property. The <strong>Lodge</strong> and the <strong>Crescent</strong> are a short walk away.</p>
+    <p style="margin-top:14px"><span class="chip">the exact walk time for the Lodge and the Crescent.</span></p>
+    <a class="btn alt" href="https://www.turningstone.com">Book at turningstone.com</a>
+    <p style="margin-top:16px;font-size:16.5px">Or call <a href="tel:+18007717711">1-800-771-7711</a>.</p>
+  </div>
+</section>
+
+<section class="band sky" id="good-to-know">
+  <div class="band-inner">
+    <h2>Good to Know</h2>
+    <div class="h2-rule"></div>
+    <ul class="facts">
+      <li><strong>Dress is business casual.</strong></li>
+      <li><strong>Meals are provided throughout</strong> — come hungry.</li>
+      <li><strong>Bring a light layer.</strong> September evenings in central New York can be cool.</li>
+      <li><strong>On site, call or text <a href="tel:+12022476903">202-247-6903</a>.</strong></li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <div class="band-inner">
+    <div>
+      <p style="font-family:'Quicksand',sans-serif;font-weight:700;font-size:21px;color:var(--white)">Questions before the event?</p>
+      <p class="foot-note" style="margin-top:6px">
+        Email <a href="mailto:andy@icp.us">andy@icp.us</a> or call <a href="tel:+12022476903">202-247-6903</a>.
+      </p>
+    </div>
+    <p class="foot-note">Head Start East LIVE · Turning Stone Resort Casino<br>Verona, New York · September 23–25, 2026</p>
+  </div>
+</footer>
+
+</body>
+</html>
